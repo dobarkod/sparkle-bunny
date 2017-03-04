@@ -1,0 +1,10 @@
+[Unit]
+Description=Net_check service script
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python ~/sparkle-bunny/net_check/net_check.py
+
+[Install]
+WantedBy=multi-user.target
